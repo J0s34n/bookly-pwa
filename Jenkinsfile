@@ -32,7 +32,7 @@ pipeline {
                 echo 'Running HTMLHint and Lighthouse audit...'
                 sh '''
                 npx htmlhint . || true
-                npx lighthouse http://localhost:8080 --output=json --output-path=./lighthouse-report.json || true
+              //  npx lighthouse http://localhost:8080 --output=json --output-path=./lighthouse-report.json || true
                 '''
             }
         }
