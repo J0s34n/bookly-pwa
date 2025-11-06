@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NODE_HOME = tool name: 'NodeJS_18', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+        NODE_HOME = tool name: 'NodeJS_20', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
         PATH = "${NODE_HOME}/bin:${env.PATH}"
     }
 
